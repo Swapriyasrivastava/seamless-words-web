@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const IntegrationsSection = () => {
   return (
-    <section className="py-20 px-8">
+    <section className="py-20 px-8 bg-gray-900">
       <div className="max-w-6xl mx-auto text-center">
-        <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-full mb-8 text-sm font-medium">
+        <Button className="bg-green-400 hover:bg-green-500 text-gray-900 px-6 py-2 rounded-full mb-8 text-sm font-medium">
           Main Features
         </Button>
         
@@ -20,11 +20,11 @@ const IntegrationsSection = () => {
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <Card className="bg-teal-700/20 border-teal-600/30 backdrop-blur-sm p-8 hover-scale">
+          <Card className="bg-gray-800/20 border-gray-600/30 backdrop-blur-sm p-8 hover-scale">
             <CardContent className="p-0">
               <div className="bg-white rounded-lg p-6 mb-6">
-                <h4 className="text-teal-900 font-semibold mb-4">1000+ Apps & Integrations</h4>
-                <h3 className="text-teal-900 text-xl font-bold mb-6">My apps</h3>
+                <h4 className="text-gray-900 font-semibold mb-4">1000+ Apps & Integrations</h4>
+                <h3 className="text-gray-900 text-xl font-bold mb-6">My apps</h3>
                 <div className="space-y-4">
                   {[
                     { name: "Asana", color: "bg-red-500", progress: "60%" },
@@ -35,28 +35,28 @@ const IntegrationsSection = () => {
                     <div key={index} className="flex items-center space-x-3">
                       <div className={`w-8 h-8 ${app.color} rounded`}></div>
                       <div className="flex-1">
-                        <div className="text-left text-teal-900 font-medium">{app.name}</div>
+                        <div className="text-left text-gray-900 font-medium">{app.name}</div>
                         <div className="w-full bg-gray-200 rounded-full h-2 mt-1">
                           <div className="bg-green-400 h-2 rounded-full" style={{width: app.progress}}></div>
                         </div>
                       </div>
-                      <div className="w-6 h-6 border-2 border-teal-600 rounded-full"></div>
+                      <div className="w-6 h-6 border-2 border-gray-600 rounded-full"></div>
                     </div>
                   ))}
                 </div>
               </div>
               <h3 className="text-white text-xl font-bold mb-4">Seamless integrations with your app tools</h3>
-              <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-lg">
+              <Button className="bg-green-400 hover:bg-green-500 text-gray-900 px-6 py-2 rounded-lg">
                 Learn more →
               </Button>
             </CardContent>
           </Card>
           
-          <Card className="bg-teal-700/20 border-teal-600/30 backdrop-blur-sm p-8 hover-scale">
+          <Card className="bg-gray-800/20 border-gray-600/30 backdrop-blur-sm p-8 hover-scale">
             <CardContent className="p-0">
               <div className="bg-white rounded-lg p-6 mb-6">
-                <h4 className="text-teal-900 font-semibold mb-4">AI Assistant</h4>
-                <h3 className="text-teal-900 text-xl font-bold mb-6">Manage users</h3>
+                <h4 className="text-gray-900 font-semibold mb-4">AI Assistant</h4>
+                <h3 className="text-gray-900 text-xl font-bold mb-6">Manage users</h3>
                 <div className="space-y-3">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <div key={i} className="flex items-center space-x-3">
@@ -67,7 +67,7 @@ const IntegrationsSection = () => {
                 </div>
               </div>
               <h3 className="text-white text-xl font-bold mb-4">Intuitive dashboard for at-a-glance insights</h3>
-              <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-lg">
+              <Button className="bg-green-400 hover:bg-green-500 text-gray-900 px-6 py-2 rounded-lg">
                 Learn more →
               </Button>
             </CardContent>

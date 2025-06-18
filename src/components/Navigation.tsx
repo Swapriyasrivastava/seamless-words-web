@@ -9,7 +9,7 @@ const Navigation = () => {
         <img 
           src="/lovable-uploads/7bd09204-e7d1-4286-afc3-97b1b535f663.png" 
           alt="Logo" 
-          className="w-10 h-10"
+          className="w-12 h-12 object-contain"
         />
       </div>
       

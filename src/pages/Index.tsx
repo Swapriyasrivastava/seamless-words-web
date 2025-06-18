@@ -17,7 +17,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 text-white overflow-hidden">
+    <div className="min-h-screen text-white overflow-hidden">
       <Navigation />
       <HeroSection />
       <FeaturesSection />
