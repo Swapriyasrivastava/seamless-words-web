@@ -39,6 +39,14 @@ const FeaturesSection = () => {
   return (
     <section className="py-20 px-8">
       <div className="max-w-6xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-white mb-4">Main Features</h2>
+          <h3 className="text-2xl text-white mb-2">Automate your workflow with</h3>
+          <h3 className="text-2xl text-white mb-6">our 1000+ apps integrations</h3>
+          <p className="text-gray-300 text-lg">Connect your tools, connect your teams with Lexend.</p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="bg-teal-700/30 border-teal-600/20 backdrop-blur-sm hover-scale overflow-hidden rounded-2xl">
@@ -59,15 +67,6 @@ const FeaturesSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-        
-        <div className="text-center mt-16">
-          <p className="text-gray-300 text-lg">Trusted by over most popular companies worldwide</p>
-          <div className="flex justify-center items-center space-x-12 mt-8 opacity-60">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="w-12 h-12 bg-green-400/20 rounded-full"></div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
