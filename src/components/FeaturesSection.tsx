@@ -33,6 +33,26 @@ const FeaturesSection = () => {
       image: "/lovable-uploads/1f04e073-db8d-4e75-99e4-38318d5bcdc2.png",
       title: "Manage subscriptions efficiently",
       description: "Keep track of all your subscriptions and team members in one place"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop",
+      title: "Advanced Business Intelligence",
+      description: "Transform your data into actionable insights with powerful analytics dashboards"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      title: "Smart File Processing",
+      description: "Intelligent document processing with automated categorization and analysis"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      title: "Real-time Data Monitoring",
+      description: "Monitor your business metrics in real-time with customizable alerts and notifications"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop",
+      title: "Team Collaboration Hub",
+      description: "Enhanced team productivity with integrated collaboration tools and shared workspaces"
     }
   ];
 
