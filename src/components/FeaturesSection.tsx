@@ -37,7 +37,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-8 bg-slate-900">
+    <section className="py-20 px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -49,7 +49,7 @@ const FeaturesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="bg-slate-800/40 border-slate-600/20 backdrop-blur-sm hover-scale overflow-hidden rounded-2xl">
+            <Card key={index} className="bg-teal-700/30 border-teal-600/20 backdrop-blur-sm hover-scale overflow-hidden rounded-2xl">
               <CardContent className="p-0">
                 <div className="p-8 pb-6">
                   <div className="bg-white rounded-xl p-6 mb-6 shadow-lg">
@@ -60,7 +60,7 @@ const FeaturesSection = () => {
                     />
                   </div>
                   <h3 className="text-white font-semibold mb-3 text-xl">{feature.title}</h3>
-                  <Button className="bg-green-400 hover:bg-green-500 text-slate-900 px-6 py-2 rounded-full text-sm font-medium">
+                  <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-full text-sm font-medium">
                     Learn more →
                   </Button>
                 </div>

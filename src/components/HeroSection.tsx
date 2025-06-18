@@ -39,11 +39,11 @@ const HeroSection = () => {
   }, [displayText, isDeleting, currentWordIndex]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-8 pt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-8 pt-20">
       <FloatingIcons />
       
       <div className="text-center max-w-4xl mx-auto relative z-10">
-        <Button className="bg-green-400 hover:bg-green-500 text-slate-900 px-6 py-2 rounded-full mb-8 text-sm font-medium">
+        <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-full mb-8 text-sm font-medium">
           Get started today!
         </Button>
         
@@ -57,7 +57,7 @@ const HeroSection = () => {
           See how we help your team solve today's biggest challenges.
         </p>
         
-        <Button className="bg-green-400 hover:bg-green-500 text-slate-900 px-8 py-4 rounded-full text-lg font-semibold mb-8">
+        <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-8 py-4 rounded-full text-lg font-semibold mb-8">
           Start your free trial
         </Button>
         
