@@ -8,11 +8,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import PricingSection from "@/components/PricingSection";
-import FeedbackSection from "@/components/FeedbackSection";
-import FAQSection from "@/components/FAQSection";
-import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
-import DarkModeToggle from "@/components/DarkModeToggle";
 
 const Index = () => {
   return (
@@ -23,10 +19,6 @@ const Index = () => {
       <IntegrationsSection />
       <SolutionsSection />
       <PricingSection />
-      <FeedbackSection />
-      <FAQSection />
-      <Footer />
-      <DarkModeToggle />
     </div>
   );
 };
