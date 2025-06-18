@@ -1,5 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const FeaturesSection = () => {
   const features = [
@@ -38,20 +39,22 @@ const FeaturesSection = () => {
   return (
     <section className="py-20 px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="bg-teal-700/20 border-teal-600/30 backdrop-blur-sm hover-scale overflow-hidden">
+            <Card key={index} className="bg-teal-700/30 border-teal-600/20 backdrop-blur-sm hover-scale overflow-hidden rounded-2xl">
               <CardContent className="p-0">
-                <div className="aspect-video w-full mb-4">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6 pt-0">
-                  <h3 className="text-white font-semibold mb-2 text-lg">{feature.title}</h3>
-                  <p className="text-gray-300 text-sm">{feature.description}</p>
+                <div className="p-8 pb-6">
+                  <div className="bg-white rounded-xl p-6 mb-6 shadow-lg">
+                    <img 
+                      src={feature.image} 
+                      alt={feature.title}
+                      className="w-full h-48 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-white font-semibold mb-3 text-xl">{feature.title}</h3>
+                  <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-full text-sm font-medium">
+                    Learn more →
+                  </Button>
                 </div>
               </CardContent>
             </Card>

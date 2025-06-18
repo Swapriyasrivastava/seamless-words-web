@@ -13,6 +13,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
       <FAQSection />
       <Footer />
       <DarkModeToggle />
+      <ScrollToTop />
     </div>
   );
 };

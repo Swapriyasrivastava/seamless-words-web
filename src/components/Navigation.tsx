@@ -6,9 +6,11 @@ const Navigation = () => {
   return (
     <nav className="flex justify-between items-center px-8 py-6 relative z-50">
       <div className="flex items-center space-x-2">
-        <div className="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center">
-          <span className="text-white font-bold text-lg">+</span>
-        </div>
+        <img 
+          src="/lovable-uploads/7bd09204-e7d1-4286-afc3-97b1b535f663.png" 
+          alt="Lexend Logo" 
+          className="w-8 h-8"
+        />
         <span className="text-2xl font-bold text-white">lexend</span>
       </div>
       
