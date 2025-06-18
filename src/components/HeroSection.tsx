@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const words = ["existing tools", "ai automation"];
+  const words = ["existing tools", "ai automation", "business app"];
   
   useEffect(() => {
     const currentWord = words[currentWordIndex];
