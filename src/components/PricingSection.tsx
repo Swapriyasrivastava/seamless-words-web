@@ -93,6 +93,16 @@ const PricingSection = () => {
                 <p className="text-gray-300 mt-2">One month only</p>
               </div>
               
+              {isYearly && (
+                <div className="mb-6">
+                  <img 
+                    src="/lovable-uploads/422b924a-54f1-410b-9aed-7a9f093c7dc5.png" 
+                    alt="Yearly Plan Reports"
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
+                </div>
+              )}
+              
               <div className="mb-8">
                 <h4 className="text-white font-semibold mb-4">Standout features</h4>
                 <ul className="space-y-3 text-gray-300">
