@@ -53,34 +53,55 @@ const FeaturesSection = () => {
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop",
       title: "Team Collaboration Hub",
       description: "Enhanced team productivity with integrated collaboration tools and shared workspaces"
+    },
+    {
+      image: "/lovable-uploads/13f9f00b-fb56-4611-a6dc-a7f4ae67f797.png",
+      title: "Smart File Upload System",
+      description: "Drag and drop file management with real-time progress tracking and format support"
+    },
+    {
+      image: "/lovable-uploads/040e3b8a-0c01-4a36-8db5-9d7767a7e88c.png",
+      title: "Subscription Management Dashboard",
+      description: "Manage team members and subscriptions with comprehensive user permission controls"
+    },
+    {
+      image: "/lovable-uploads/24fd1ec4-7054-419e-a910-0c828699fbca.png",
+      title: "Business Growth Analytics",
+      description: "Track your business growth with detailed scalable plan analytics and insights"
+    },
+    {
+      image: "/lovable-uploads/8238a560-993b-4dd9-b3d1-86040fe7b877.png",
+      title: "Project Reporting Suite",
+      description: "Generate comprehensive project reports with multi-series data visualization"
     }
   ];
 
   return (
-    <section className="py-20 px-8">
+    <section className="py-20 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Main Features</h2>
-          <h3 className="text-2xl text-white mb-2">Automate your workflow with</h3>
-          <h3 className="text-2xl text-white mb-6">our 1000+ apps integrations</h3>
-          <p className="text-gray-300 text-lg">Connect your tools, connect your teams with Lexend.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Main Features</h2>
+          <h3 className="text-xl md:text-2xl text-white mb-2">Automate your workflow with</h3>
+          <h3 className="text-xl md:text-2xl text-white mb-6">our 1000+ apps integrations</h3>
+          <p className="text-gray-300 text-base md:text-lg">Connect your tools, connect your teams with Lexend.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="bg-teal-700/30 border-teal-600/20 backdrop-blur-sm hover-scale overflow-hidden rounded-2xl">
               <CardContent className="p-0">
-                <div className="p-8 pb-6">
-                  <div className="bg-white rounded-xl p-6 mb-6 shadow-lg">
+                <div className="p-6 md:p-8 pb-6">
+                  <div className="bg-white rounded-xl p-4 md:p-6 mb-4 md:mb-6 shadow-lg">
                     <img 
                       src={feature.image} 
                       alt={feature.title}
-                      className="w-full h-48 object-contain"
+                      className="w-full h-32 md:h-48 object-contain"
                     />
                   </div>
-                  <h3 className="text-white font-semibold mb-3 text-xl">{feature.title}</h3>
-                  <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-6 py-2 rounded-full text-sm font-medium">
+                  <h3 className="text-white font-semibold mb-3 text-lg md:text-xl">{feature.title}</h3>
+                  <p className="text-gray-300 mb-4 text-sm md:text-base">{feature.description}</p>
+                  <Button className="bg-green-400 hover:bg-green-500 text-teal-900 px-4 md:px-6 py-2 rounded-full text-sm font-medium">
                     Learn more →
                   </Button>
                 </div>

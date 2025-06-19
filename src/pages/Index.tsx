@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import IntegrationsSection from "@/components/IntegrationsSection";
+import FeaturesSection from "@/components/FeaturesSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import PricingSection from "@/components/PricingSection";
 import FeedbackSection from "@/components/FeedbackSection";
@@ -20,6 +21,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <IntegrationsSection />
+      <FeaturesSection />
       <SolutionsSection />
       <PricingSection />
       <FeedbackSection />
