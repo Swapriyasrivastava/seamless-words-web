@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, BarChart3, Eye, RefreshCw } from "lucide-react";
@@ -90,7 +89,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center px-8 pt-20 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-start px-8 pt-36 pb-24 overflow-hidden"
       style={{
         backgroundImage:
           "linear-gradient(to bottom, #277f95, #1c6474, #124a55, #093238, #021b1e)",
@@ -107,7 +106,7 @@ const HeroSection = () => {
               r={r}
               fill="none"
               stroke="rgba(137, 255, 174, 0.3)"
-              strokeWidth="0.5"
+              strokeWidth="0.2"
             />
           ))}
         </svg>
@@ -117,9 +116,9 @@ const HeroSection = () => {
       <FloatingIcons />
 
       {/* Main Content */}
-      <div className="text-center max-w-6xl mx-auto relative z-10">
+      <div className="text-center max-w-6xl mx-auto relative z-10 translate-y-6">
         <Button
-          className="text-sm font-medium px-6 py-2 rounded-full mb-8"
+          className="text-sm font-medium px-6 py-2 rounded-full mb-12"
           style={{
             backgroundColor: "#D9FFB2",
             color: "#021B1E",
@@ -169,7 +168,7 @@ const HeroSection = () => {
         </div>
 
         {/* Feature Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 max-w-6xl mx-auto">
           {featureBoxes.map((feature, index) => (
             <div
               key={index}
@@ -190,6 +189,31 @@ const HeroSection = () => {
               </h3>
             </div>
           ))}
+        </div>
+
+        {/* Trusted by Section */}
+        <div className="mb-16">
+          <p className="text-[#A5B1B9] text-lg mb-8">
+            Trusted by over most popular companies worldwide
+          </p>
+          <div className="flex items-center justify-center space-x-12 opacity-60">
+            <div className="w-12 h-12 rounded-full bg-[#2a5a65] flex items-center justify-center">
+              <div className="w-6 h-6 rounded-full bg-[#89FFAE]"></div>
+            </div>
+            <div className="w-12 h-12 rounded-full bg-[#2a5a65] flex items-center justify-center">
+              <svg className="w-6 h-6 text-[#89FFAE]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+              </svg>
+            </div>
+            <div className="w-12 h-12 rounded-full bg-[#2a5a65] flex items-center justify-center">
+              <div className="w-8 h-2 bg-[#89FFAE] rounded-full"></div>
+            </div>
+            <div className="w-12 h-12 rounded-full bg-[#2a5a65] flex items-center justify-center">
+              <svg className="w-6 h-6 text-[#89FFAE]" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10A1 1 0 011.12-.38z" clipRule="evenodd"/>
+              </svg>
+            </div>
+          </div>
         </div>
 
         {/* Screenshot Preview */}
